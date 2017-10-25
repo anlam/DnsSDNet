@@ -9,7 +9,11 @@ This library provides service discovery and registration using [DNS-SD](http://w
 ```cs
 Environment.SetEnvironmentVariable("dnssdServer", "10.200.0.10");
 ```
-Otherwise, the default DNS Server which is configured on the executing computer will be used. See _DNSClientUtil.cs_ for more details.
+Otherwise, the default DNS Server which is configured on the executing computer will be used. See _DNSClientUtil.cs_ for more details. The same method can be used to set dnssd domain name and host name (see _DomainUtil.cs_ for more details):
+```cs
+Environment.SetEnvironmentVariable("dnssdDomain", "your.domain.name");
+Environment.SetEnvironmentVariable("dnssdHostname", "your.host.name");
+```
 - [log4net](https://logging.apache.org/log4net/) is used for logging purpose.
 
 ### Acknowledgments:
