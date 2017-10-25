@@ -19,4 +19,4 @@ Environment.SetEnvironmentVariable("dnssdHostname", "your.host.name");
 ### Acknowledgments:
 
 - The implementation of this library is almost similar to the [DNS-SD for Java](https://github.com/DanielN/dnssdjava) provided by Daniel Nilsson.
-- The low level DNS communication is provided by [ARSoft.Tools.Net](https://arsofttoolsnet.codeplex.com/).
+- The low level DNS communication is provided by [ARSoft.Tools.Net](https://github.com/alexreinert/ARSoft.Tools.Net) provided by Alexander Reinert.
