@@ -12,7 +12,7 @@ namespace DnsSDNet
  * Unicast {@link DnsSDBrowser} implementation backed by dnsjava.
  * @author Daniel Nilsson
  */
-    class UnicastDnsSDBrowser : DnsSDBrowser
+    public class UnicastDnsSDBrowser : DnsSDBrowser
     {
 
         private static readonly log4net.ILog Log = log4net.LogManager.GetLogger(typeof(UnicastDnsSDBrowser));

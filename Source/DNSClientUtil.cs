@@ -9,7 +9,7 @@ using System.Net;
 
 namespace DnsSDNet
 {
-    class DNSClientUtil
+    public class DNSClientUtil
     {
         private static DnsClient client;
         private static List<IPAddress> servers;
@@ -24,7 +24,7 @@ namespace DnsSDNet
                     servers = new List<IPAddress>();
 
                 String prop = Environment.GetEnvironmentVariable("dnssdServer");
-                if (prop != null && !prop.Equals(""))
+                if (!String.IsNullOrWhiteSpace(prop))
                 {
                     String[] st = prop.Trim().Split(',');
                     foreach (string str in st)

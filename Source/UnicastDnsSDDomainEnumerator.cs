@@ -12,7 +12,7 @@ namespace DnsSDNet
     * Unicast {@link DnsSDDomainEnumerator} implementation backed by dnsjava.
     * @author Daniel Nilsson
     */
-    class UnicastDnsSDDomainEnumerator : DnsSDDomainEnumerator
+    public  class UnicastDnsSDDomainEnumerator : DnsSDDomainEnumerator
     {
 
         private static readonly log4net.ILog Log = log4net.LogManager.GetLogger(typeof(UnicastDnsSDDomainEnumerator));

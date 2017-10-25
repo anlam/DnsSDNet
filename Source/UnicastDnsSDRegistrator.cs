@@ -17,7 +17,7 @@ namespace DnsSDNet
      * Unicast {@link DnsSDRegistrator} implementation backed by dnsjava.
      * @author Daniel Nilsson
      */
-    class UnicastDnsSDRegistrator : DnsSDRegistrator
+    public class UnicastDnsSDRegistrator : DnsSDRegistrator
     {
 
         private static readonly log4net.ILog Log = log4net.LogManager.GetLogger(typeof(UnicastDnsSDRegistrator));

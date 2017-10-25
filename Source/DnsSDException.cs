@@ -13,9 +13,6 @@ namespace DnsSDNet
     public class DnsSDException : Exception
     {
 
-
-    private static long serialVersionUID = 1L;
-
     public DnsSDException()
     {
     }

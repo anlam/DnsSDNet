@@ -13,7 +13,7 @@ namespace DnsSDNet
   * Internal helper class for figuring out domain names.
   * @author Daniel Nilsson
   */
-    class DomainUtil
+    public class DomainUtil
     {
 
 
@@ -22,10 +22,11 @@ namespace DnsSDNet
          * Try to figure out the domain name for the computer.
          * @return a list of potential domain names.
          */
-        public static List<String> getComputerDomains(String domain = null)
+        public static List<String> getComputerDomains()
         {
             //String domain = System.getProperty("dnssd.domain");
-            if (domain != null && !domain.Equals(""))
+            String domain = Environment.GetEnvironmentVariable("dnssdDomain");
+            if (!String.IsNullOrWhiteSpace(domain))
             {
                 List<String> lst = new List<string>();
                 lst.Add(domain);
@@ -79,10 +80,10 @@ namespace DnsSDNet
          * Try to figure out the host name for the computer.
          * @return a list of potential host names.
          */
-        public static List<String> getComputerHostNames(String hostname = null)
+        public static List<String> getComputerHostNames()
         {
-           
-            if (hostname != null)
+            String hostname = Environment.GetEnvironmentVariable("dnssdHostname");
+            if (!String.IsNullOrWhiteSpace(hostname))
             {
                 List<String> lst = new List<string>();
                 lst.Add(hostname);
